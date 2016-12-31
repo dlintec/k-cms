@@ -14,7 +14,7 @@ michalvalasek:autoform-bootstrap-colorpicker
 orionjs:filesystem
 vsivsi:orion-file-collection
 orionjs:image-attribute
-npm-bcrypt@0.9.2
+npm-bcrypt
 orionjs:file-attribute
 orionjs:summernote
 orionjs:lang-es
@@ -35,3 +35,5 @@ check
 standard-minifier-css
 standard-minifier-js
 shell-server
+nicolaslopezj:roles
+accounts-ui

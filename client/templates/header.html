@@ -14,10 +14,13 @@
       </div>
 
       <div class="collapse navbar-collapse" id="navigation">
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-left">
           {{#each sections}}
             {{> headerLink}}
           {{/each}}
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            {{> loginButtons}}
         </ul>
       </div>
     </div>

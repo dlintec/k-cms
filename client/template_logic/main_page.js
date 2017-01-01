@@ -1,10 +1,27 @@
+Template.mainPage.helpers({
+  isReady: function(sub) {
+    if(sub) {
+      return FlowRouter.subsReady(sub);
+    } else {
+      return FlowRouter.subsReady();
+    }
+  },
+  sections: function(){
+      return Sections.find({}, {sort: {order: 1}});
+  }
+});
 Template.mainPage.onRendered(function(){
   scrollToPath();
   updateOnScroll();
 });
+Template.mainPage.onCreated(function () {
+  var self = this;
+  self.subscribe("sectionsPub");
+});
 
 function scrollToPath(){
-  var path = Iron.Location.get().path.slice(1);
+  /*var path = Iron.Location.get().path.slice(1);*/
+  var path=location.pathname.substr((location.pathname.lastIndexOf('/')+1))
   if(path){
     var element = $("#" + path);
     if(element.length > 0){

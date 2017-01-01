@@ -4,7 +4,6 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-iron:router
 orionjs:core
 twbs:bootstrap
 fortawesome:fontawesome
@@ -37,3 +36,9 @@ standard-minifier-js
 shell-server
 nicolaslopezj:roles
 accounts-ui
+aldeed:collection2-core
+aldeed:schema-deny
+aldeed:schema-index
+aldeed:tabular
+kadira:flow-router
+kadira:blaze-layout

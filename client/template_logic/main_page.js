@@ -11,12 +11,14 @@ Template.mainPage.helpers({
   }
 });
 Template.mainPage.onRendered(function(){
+
   scrollToPath();
   updateOnScroll();
 });
 Template.mainPage.onCreated(function () {
   var self = this;
   self.subscribe("sectionsPub");
+  document.title = orion.dictionary.get('site.title', 'Website');
 });
 
 function scrollToPath(){

@@ -1,0 +1,26 @@
+<template name="flow_layout">
+      <div class="layout-page" style="background-color:{{dict 'site.defaultColour' '#ffffff'}}">
+
+          {{> Template.dynamic template=top}}
+          <div id="main">
+                {{> Template.dynamic template=main}}
+          </div>
+      </div>
+</template>
+
+<template name="dataTest">
+  <h1>This is a test</h1>
+  <h3>All Pages</h3>
+  {{# each pages }}
+    <a href="{{ path }}">
+      {{ title }}
+    </a>
+  {{/ each }}
+
+  <h3>Some Pages</h3>
+  {{# each pages template="pagesSimple" }}
+    <a href="{{ path }}">
+      {{ title }}
+    </a>
+  {{/ each }}
+</template>

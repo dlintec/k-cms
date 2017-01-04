@@ -3,7 +3,7 @@ Template.flow_layout.onCreated(function() {
   this.autorun(() => {
     const isReady = handle.ready();
     console.log(`Handle is ${isReady ? 'ready' : 'not ready'}`);
-    document.title = orion.dictionary.get('site.title', 'Websitex');
+    document.title = orion.dictionary.get('site.title', 'dlintec');
   });
 });
 Template.flow_layout.helpers({

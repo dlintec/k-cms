@@ -1,4 +1,4 @@
-Template.dataTest.onCreated(function() {
+Template.flow_layout.onCreated(function() {
   const handle=this.subscribe('pages');
   this.autorun(() => {
     const isReady = handle.ready();
@@ -6,7 +6,7 @@ Template.dataTest.onCreated(function() {
     document.title = orion.dictionary.get('site.title', 'Websitex');
   });
 });
-Template.dataTest.helpers({
+Template.flow_layout.helpers({
 
   pages:function(){
     return  pages.find({}, {sort: {order: 1}});

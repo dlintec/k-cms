@@ -18,7 +18,7 @@ Template.mainPage.onRendered(function(){
 Template.mainPage.onCreated(function () {
   var self = this;
   self.subscribe("sectionsPub");
-  document.title = orion.dictionary.get('site.title', 'Website');
+  
 });
 
 function scrollToPath(){
